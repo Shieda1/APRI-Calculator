@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>APRI Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- radio -->
+  <input type="radio" id="APRIscoreRadio" name="variables" checked>
+  <label for="APRIscoreRadio">APRI score</label>
+
+  <input type="radio" id="ASTlevelRadio" name="variables">
+  <label for="ASTlevelRadio">AST level</label>
+
+  <input type="radio" id="ASTupperlimitRadio" name="variables">
+  <label for="ASTupperlimitRadio">AST upper limit</label>
+
+  <input type="radio" id="plateletcountRadio" name="variables">
+  <label for="plateletcountRadio">Platelet count</label><br><br>
+  <!-- end radio -->
+  
+  <label for="v1" id="variable1">AST level</label>
+  <input type="number" id="v1"><br><br>
+  
+  <label for="v2" id="variable2">AST upper limit</label>
+  <input type="number" id="v2"><br><br>
+  
+  <label for="v3" id="variable3">Platelet count</label>
+  <input type="number" id="v3"><br><br>
+
+  <button id="btn">compute</button>
+
+  <p id="result"></p>
+  <script src="app.js"></script>
+</body>
+</html>
